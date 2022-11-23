@@ -81,4 +81,17 @@ public class Song {
         this.tags.add(tag);
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "name='" + name + '\'' +
+                ", artist='" + artist + '\'' +
+                ", duration=" + duration +
+                ", rating=" + rating +
+                ", releaseDate=" + releaseDate +
+                ", views=" + views +
+                ", tags=" + tags +
+                '}';
+    }
 }

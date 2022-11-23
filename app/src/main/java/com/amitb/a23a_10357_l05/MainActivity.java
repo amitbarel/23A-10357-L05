@@ -48,5 +48,7 @@ public class MainActivity extends AppCompatActivity {
         String json2 = "{\"name\":\"My favorite songs\",\"songs\":[{\"artist\":\"נועה קירל\",\"duration\":205,\"name\":\"פנתרה\",\"rating\":4.3,\"releaseDate\":1669208715,\"tags\":[\"Pop\",\"Israeli\"],\"views\":18001491},{\"artist\":\"PSY\",\"duration\":252,\"name\":\"Gangnam style\",\"rating\":4.9,\"releaseDate\":1669208715,\"tags\":[\"K-Pop\",\"Korean\"],\"views\":4600000000}]}";
         Playlist playlist2 = new Gson().fromJson(json2,Playlist.class);
         Log.d("Playlist from JSON", playlist2.toString());
+
+        
     }
 }

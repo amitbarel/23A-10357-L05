@@ -34,9 +34,7 @@ public class SignalGenerator {
     }
 
     public void vibrate(){
-
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            Log.d("tag","Hello");
             v.vibrate(VibrationEffect.createOneShot(500,VibrationEffect.DEFAULT_AMPLITUDE));
         }else{
             v.vibrate(500);
